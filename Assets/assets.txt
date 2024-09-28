@@ -1,0 +1,9 @@
+lose.wav by LittleRobotSoundFactory -- https://freesound.org/s/270467/ -- License: Attribution 4.0
+
+win.wav by LittleRobotSoundFactory -- https://freesound.org/s/270545/ -- License: Attribution 4.0
+
+carDrive.ogg by FreeCarSoundsGaming -- https://freesound.org/s/535041/ -- License: Creative Commons 0
+
+carIdle.wav by ptp8ss -- https://freesound.org/s/346861/ -- License: Creative Commons 0
+
+PixelPack (playerCar, roadTexture, opponentCar, detailTexture) -> https://grafxkid.itch.io/mini-pixel-pack-2 under Creative Commons!

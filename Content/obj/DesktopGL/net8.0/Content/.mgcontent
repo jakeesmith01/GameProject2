@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/background.webp</File>
+    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/backgroundMusic.wav</File>
+    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/Baskervville-SC.spritefont</File>
+    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/blank.png</File>
+    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/carDrive.ogg</File>
+    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/carDrive2.wav</File>
+    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/carIdle.wav</File>
+    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/details.png</File>
+    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/finishline.png</File>
+    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/gasstation.png</File>
+    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/gradient.png</File>
+    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/lose.wav</File>
+    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/opponentcar.png</File>
+    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/playercar.png</File>
+    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/road.png</File>
+    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/win.wav</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/backgroundMusic.wav</SourceFile>
+  <SourceTime>2024-09-27T19:36:25.5696346-05:00</SourceTime>
+  <DestFile>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/bin/DesktopGL/Content/backgroundMusic.xnb</DestFile>
+  <DestTime>2024-09-27T19:42:46.8315105-05:00</DestTime>
+  <Importer>WavImporter</Importer>
+  <ImporterTime>2024-08-16T12:05:56-05:00</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2024-08-16T12:05:56-05:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/bin/DesktopGL/Content/backgroundMusic.ogg</string>
+  </BuildOutput>
+</PipelineBuildEvent>

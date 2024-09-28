@@ -1,0 +1,45 @@
+/home/jake/ksu/projects/cis580/gameprojecttwo/obj/Debug/net8.0/gameprojecttwo.csproj.AssemblyReference.cache
+/home/jake/ksu/projects/cis580/gameprojecttwo/obj/Debug/net8.0/gameprojecttwo.GeneratedMSBuildEditorConfig.editorconfig
+/home/jake/ksu/projects/cis580/gameprojecttwo/obj/Debug/net8.0/gameprojecttwo.AssemblyInfoInputs.cache
+/home/jake/ksu/projects/cis580/gameprojecttwo/obj/Debug/net8.0/gameprojecttwo.AssemblyInfo.cs
+/home/jake/ksu/projects/cis580/gameprojecttwo/obj/Debug/net8.0/gameprojecttwo.csproj.CoreCompileInputs.cache
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/gameprojecttwo
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/gameprojecttwo.deps.json
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/gameprojecttwo.runtimeconfig.json
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/gameprojecttwo.dll
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/gameprojecttwo.pdb
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/MonoGame.Framework.dll
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/NVorbis.dll
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/runtimes/linux-x64/native/libopenal.so.1
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/runtimes/osx/native/libopenal.1.dylib
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/runtimes/win-x64/native/soft_oal.dll
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/runtimes/win-x86/native/soft_oal.dll
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/runtimes/linux-x64/native/libSDL2-2.0.so.0
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/runtimes/osx/native/libSDL2.dylib
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/runtimes/win-x64/native/SDL2.dll
+/home/jake/ksu/projects/cis580/gameprojecttwo/obj/Debug/net8.0/gameprojecttwo.csproj.CopyComplete
+/home/jake/ksu/projects/cis580/gameprojecttwo/obj/Debug/net8.0/gameprojecttwo.dll
+/home/jake/ksu/projects/cis580/gameprojecttwo/obj/Debug/net8.0/refint/gameprojecttwo.dll
+/home/jake/ksu/projects/cis580/gameprojecttwo/obj/Debug/net8.0/gameprojecttwo.pdb
+/home/jake/ksu/projects/cis580/gameprojecttwo/obj/Debug/net8.0/gameprojecttwo.genruntimeconfig.cache
+/home/jake/ksu/projects/cis580/gameprojecttwo/obj/Debug/net8.0/ref/gameprojecttwo.dll
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/Baskervville-SC.xnb
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/blank.xnb
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/background.xnb
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/gradient.xnb
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/PixelPack/Levels/Desert_details (16 x 16).xnb
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/PixelPack/Levels/Desert_gas_station (128 x 304).xnb
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/PixelPack/Levels/Desert_road (64 x 64).xnb
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/details.xnb
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/gasstation.xnb
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/road.xnb
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/playercar.xnb
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/opponentcar.xnb
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/finishline.xnb
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/backgroundMusic.ogg
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/backgroundMusic.xnb
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/carDrive.xnb
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/carIdle.xnb
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/lose.xnb
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/win.xnb
+/home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/carDrive2.xnb

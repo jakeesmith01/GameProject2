@@ -1,0 +1,17 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"/home/jake/ksu/projects/cis580/gameprojecttwo/Content/background.webp","/home/jake/ksu/projects/cis580/gameprojecttwo/Content/bin/DesktopGL/background.xnb","TextureProcessor","Texture2DContent",175558,4194389,0.3286328
+"/home/jake/ksu/projects/cis580/gameprojecttwo/Content/backgroundMusic.wav","/home/jake/ksu/projects/cis580/gameprojecttwo/Content/bin/DesktopGL/backgroundMusic.xnb","SongProcessor","SongContent",6105592,133,0.3468362
+"/home/jake/ksu/projects/cis580/gameprojecttwo/Content/Baskervville-SC.spritefont","/home/jake/ksu/projects/cis580/gameprojecttwo/Content/bin/DesktopGL/Baskervville-SC.xnb","FontDescriptionProcessor","SpriteFontContent",2018,70690,0.3159041
+"/home/jake/ksu/projects/cis580/gameprojecttwo/Content/blank.png","/home/jake/ksu/projects/cis580/gameprojecttwo/Content/bin/DesktopGL/blank.xnb","TextureProcessor","Texture2DContent",187,149,0.1823064
+"/home/jake/ksu/projects/cis580/gameprojecttwo/Content/carDrive.ogg","/home/jake/ksu/projects/cis580/gameprojecttwo/Content/bin/DesktopGL/carDrive.xnb","SoundEffectProcessor","SoundEffectContent",21781,138345,0.2598606
+"/home/jake/ksu/projects/cis580/gameprojecttwo/Content/carDrive2.wav","/home/jake/ksu/projects/cis580/gameprojecttwo/Content/bin/DesktopGL/carDrive2.xnb","SoundEffectProcessor","SoundEffectContent",1270706,837521,0.1444157
+"/home/jake/ksu/projects/cis580/gameprojecttwo/Content/carIdle.wav","/home/jake/ksu/projects/cis580/gameprojecttwo/Content/bin/DesktopGL/carIdle.xnb","SoundEffectProcessor","SoundEffectContent",14994730,14994105,0.2200609
+"/home/jake/ksu/projects/cis580/gameprojecttwo/Content/details.png","/home/jake/ksu/projects/cis580/gameprojecttwo/Content/bin/DesktopGL/details.xnb","TextureProcessor","Texture2DContent",516,4181,0.174891
+"/home/jake/ksu/projects/cis580/gameprojecttwo/Content/finishline.png","/home/jake/ksu/projects/cis580/gameprojecttwo/Content/bin/DesktopGL/finishline.xnb","TextureProcessor","Texture2DContent",122,1109,0.1701069
+"/home/jake/ksu/projects/cis580/gameprojecttwo/Content/gasstation.png","/home/jake/ksu/projects/cis580/gameprojecttwo/Content/bin/DesktopGL/gasstation.xnb","TextureProcessor","Texture2DContent",2762,155733,0.0156223
+"/home/jake/ksu/projects/cis580/gameprojecttwo/Content/gradient.png","/home/jake/ksu/projects/cis580/gameprojecttwo/Content/bin/DesktopGL/gradient.xnb","TextureProcessor","Texture2DContent",258,341,0.0110819
+"/home/jake/ksu/projects/cis580/gameprojecttwo/Content/lose.wav","/home/jake/ksu/projects/cis580/gameprojecttwo/Content/bin/DesktopGL/lose.xnb","SoundEffectProcessor","SoundEffectContent",1389700,925801,0.2101566
+"/home/jake/ksu/projects/cis580/gameprojecttwo/Content/opponentcar.png","/home/jake/ksu/projects/cis580/gameprojecttwo/Content/bin/DesktopGL/opponentcar.xnb","TextureProcessor","Texture2DContent",1311,16469,0.115632
+"/home/jake/ksu/projects/cis580/gameprojecttwo/Content/playercar.png","/home/jake/ksu/projects/cis580/gameprojecttwo/Content/bin/DesktopGL/playercar.xnb","TextureProcessor","Texture2DContent",774,8277,0.1540409
+"/home/jake/ksu/projects/cis580/gameprojecttwo/Content/road.png","/home/jake/ksu/projects/cis580/gameprojecttwo/Content/bin/DesktopGL/road.xnb","TextureProcessor","Texture2DContent",427,16469,0.0027086
+"/home/jake/ksu/projects/cis580/gameprojecttwo/Content/win.wav","/home/jake/ksu/projects/cis580/gameprojecttwo/Content/bin/DesktopGL/win.xnb","SoundEffectProcessor","SoundEffectContent",1709428,1138953,0.0286713
