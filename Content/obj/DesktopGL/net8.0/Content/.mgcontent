@@ -4,24 +4,42 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/background.webp</File>
-    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/backgroundMusic.wav</File>
-    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/Baskervville-SC.spritefont</File>
-    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/blank.png</File>
-    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/carDrive.ogg</File>
-    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/carDrive2.wav</File>
-    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/carIdle.wav</File>
-    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/details.png</File>
-    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/finishline.png</File>
-    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/gasstation.png</File>
-    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/gradient.png</File>
-    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/lose.wav</File>
-    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/opponentcar.png</File>
-    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/playercar.png</File>
-    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/road.png</File>
-    <File>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/win.wav</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/aiCar.tsx</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/background.webp</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/backgroundMusic.wav</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/Baskervville-SC.spritefont</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/blank.png</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/carDrive.ogg</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/carDrive2.wav</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/carIdle.wav</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/DesertLevel2.0.tmx</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/details.png</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/details.tsx</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/finishline.png</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/gas16x16.tsx</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/gasstation.png</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/gradient.png</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/lose.wav</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/misc_props.png</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/opponentcar.png</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/playerCar.tsx</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/playercartexture.png</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/props.tsx</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/road.png</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/road16x16.tsx</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/roadMark.tsx</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/win.wav</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

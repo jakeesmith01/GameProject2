@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/carIdle.wav</SourceFile>
-  <SourceTime>2024-09-27T19:30:58.1842277-05:00</SourceTime>
-  <DestFile>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/bin/DesktopGL/carIdle.xnb</DestFile>
-  <DestTime>2024-09-27T19:33:13.7037049-05:00</DestTime>
+  <SourceFile>C:/Users/Jake/source/repos/gp6/Content/carIdle.wav</SourceFile>
+  <SourceTime>2024-11-22T12:36:42.1322068-06:00</SourceTime>
+  <DestFile>C:/Users/Jake/source/repos/gp6/Content/bin/DesktopGL/carIdle.xnb</DestFile>
+  <DestTime>2024-11-22T13:47:59.3367525-06:00</DestTime>
   <Importer>WavImporter</Importer>
   <ImporterTime>2024-08-16T12:05:56-05:00</ImporterTime>
   <Processor>SoundEffectProcessor</Processor>

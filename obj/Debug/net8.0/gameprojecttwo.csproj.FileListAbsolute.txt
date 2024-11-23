@@ -43,3 +43,74 @@
 /home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/lose.xnb
 /home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/win.xnb
 /home/jake/ksu/projects/cis580/gameprojecttwo/bin/Debug/net8.0/Content/carDrive2.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\PixelPack\Levels\Desert_details (16 x 16).xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\PixelPack\Levels\Desert_gas_station (128 x 304).xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\PixelPack\Levels\Desert_road (64 x 64).xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\aiCar_0.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\background.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\backgroundMusic.ogg
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\backgroundMusic.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\Baskervville-SC.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\blank.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\carDrive.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\carDrive2.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\carIdle.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\details.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\details_0.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\finishline.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\gasstation.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\gasStation_0.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\gradient.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\lose.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\Mini Pixel Pack 2\Cars\Player_blue (16 x 16)_0.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\Mini Pixel Pack 2\Cars\Player_red (16 x 16)_0.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\Mini Pixel Pack 2\Levels\Desert_details (16 x 16)_0.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\Mini Pixel Pack 2\Levels\Desert_gas_station (128 x 304)_0.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\Mini Pixel Pack 2\Levels\Desert_road (64 x 64)_0.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\Mini Pixel Pack 2\Props\Misc_props (16 x 16)_0.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\Mini Pixel Pack 2\Props\Road_markings (16 x 16)_0.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\opponentcar.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\playercar.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\playerCar_0.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\props_0.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\road.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\roadMark_0.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\road_0.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\win.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\gameprojecttwo.exe
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\gameprojecttwo.deps.json
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\gameprojecttwo.runtimeconfig.json
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\gameprojecttwo.dll
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\gameprojecttwo.pdb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Autofac.dll
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\MonoGame.Extended.dll
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\MonoGame.Extended.Content.Pipeline.dll
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\MonoGame.Framework.dll
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\NVorbis.dll
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\runtimes\linux-x64\native\libopenal.so.1
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\runtimes\osx\native\libopenal.1.dylib
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\runtimes\win-x64\native\soft_oal.dll
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\runtimes\win-x86\native\soft_oal.dll
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\runtimes\linux-x64\native\libSDL2-2.0.so.0
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\runtimes\osx\native\libSDL2.dylib
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\runtimes\win-x64\native\SDL2.dll
+C:\Users\Jake\source\repos\gp6\obj\Debug\net8.0\gameprojecttwo.csproj.AssemblyReference.cache
+C:\Users\Jake\source\repos\gp6\obj\Debug\net8.0\gameprojecttwo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jake\source\repos\gp6\obj\Debug\net8.0\gameprojecttwo.AssemblyInfoInputs.cache
+C:\Users\Jake\source\repos\gp6\obj\Debug\net8.0\gameprojecttwo.AssemblyInfo.cs
+C:\Users\Jake\source\repos\gp6\obj\Debug\net8.0\gameprojecttwo.csproj.CoreCompileInputs.cache
+C:\Users\Jake\source\repos\gp6\obj\Debug\net8.0\gameprojecttwo.sourcelink.json
+C:\Users\Jake\source\repos\gp6\obj\Debug\net8.0\gameproj.38BE40F5.Up2Date
+C:\Users\Jake\source\repos\gp6\obj\Debug\net8.0\gameprojecttwo.dll
+C:\Users\Jake\source\repos\gp6\obj\Debug\net8.0\refint\gameprojecttwo.dll
+C:\Users\Jake\source\repos\gp6\obj\Debug\net8.0\gameprojecttwo.pdb
+C:\Users\Jake\source\repos\gp6\obj\Debug\net8.0\gameprojecttwo.genruntimeconfig.cache
+C:\Users\Jake\source\repos\gp6\obj\Debug\net8.0\ref\gameprojecttwo.dll
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\aiCar.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\props.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\roadMark.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\playercartexture.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\misc_props.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\DesertLevel2.0.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\gas16x16.xnb
+C:\Users\Jake\source\repos\gp6\bin\Debug\net8.0\Content\road16x16.xnb

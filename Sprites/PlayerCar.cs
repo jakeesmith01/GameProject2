@@ -8,8 +8,8 @@ using System.Text;
 using StateManagement;
 using Screens;
 using Microsoft.Xna.Framework.Audio;
-using gameprojecttwo;
-using System.Net.Http.Headers;
+using Camera;
+using Collision;
 
 namespace Sprites{
     public class PlayerCar{
@@ -20,9 +20,9 @@ namespace Sprites{
         // The bounding rectangle (hitbox) of the car
 
         // The position of the car
-        public Vector2 Position = new Vector2(300, 916);
+        public Vector2 Position = new Vector2();
 
-        public float Speed = 100f;
+        public float Speed = 75f;
 
         private float _speedVariation = 75f;
 
@@ -30,24 +30,46 @@ namespace Sprites{
 
         private SoundManager _soundManager = new SoundManager();
 
-        
+        public BoundingRectangle Hitbox;
 
+        public bool SpeedBoostActive = false;
+
+        
+        public PlayerCar(Vector2 position)
+        {
+            Position = position;
+            Hitbox = new BoundingRectangle(position, 16, 16);
+        }
 
         public void LoadContent(ContentManager content){
-            _texture = content.Load<Texture2D>("playercar");
+            _texture = content.Load<Texture2D>("playercartexture");
             _soundManager.LoadContent(content);
         }
 
-        public void Update(GameTime gameTime)
+        public void HandleCollision(Vector2 collisionDirection, float knockbackDistance)
         {
-            if(gameTime.TotalGameTime.TotalMilliseconds % 750 < gameTime.ElapsedGameTime.TotalMilliseconds){
-                Speed = (float)(new Random().NextDouble() * _speedVariation) + 100f;
-            }
+            Position += collisionDirection * knockbackDistance;
 
-            if(Position.Y < 32){
-                _soundManager.StopCarSounds();
-            }
+            Hitbox.X = Position.X;
+            Hitbox.Y = Position.Y;
+        }
 
+        /// <summary>
+        /// Used when the car drives over a speed boost.
+        /// </summary>
+        public void SpeedBoost()
+        {
+            Speed = 150f;
+            SpeedBoostActive = true;
+        }
+
+        /// <summary>
+        /// Used when the car's speed boost wears off.
+        /// </summary>
+        public void SpeedBoostOff()
+        {
+            Speed = 75f;
+            SpeedBoostActive = false;
         }
 
         public void HandleInput(GameTime gameTime, InputState input, int playerIndex)
@@ -90,6 +112,8 @@ namespace Sprites{
 
             _movement = movement;
             Position += movement * Speed * (float)gameTime.ElapsedGameTime.TotalSeconds;
+            Hitbox.X = Position.X;
+            Hitbox.Y = Position.Y;
         }
 
         /// <summary>
@@ -113,6 +137,8 @@ namespace Sprites{
         {
             int tileIndex = GetDirectionIndex();
             Rectangle src = new Rectangle(tileIndex * 16, 0, 16, 16);
+
+
             spriteBatch.Draw(_texture, Position, src, Color.White);
         }
 

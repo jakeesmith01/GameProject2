@@ -9,13 +9,43 @@
       "gameprojecttwo/1.0.0": {
         "dependencies": {
           "MonoGame.Content.Builder.Task": "3.8.2.1105",
+          "MonoGame.Extended": "4.0.3",
+          "MonoGame.Extended.Content.Pipeline": "4.0.3",
           "MonoGame.Framework.DesktopGL": "3.8.2.1105"
         },
         "runtime": {
           "gameprojecttwo.dll": {}
         }
       },
+      "Autofac/5.2.0": {
+        "runtime": {
+          "lib/netstandard2.1/Autofac.dll": {
+            "assemblyVersion": "5.2.0.0",
+            "fileVersion": "5.2.0.0"
+          }
+        }
+      },
       "MonoGame.Content.Builder.Task/3.8.2.1105": {},
+      "MonoGame.Extended/4.0.3": {
+        "runtime": {
+          "lib/net8.0/MonoGame.Extended.dll": {
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.0.3.0"
+          }
+        }
+      },
+      "MonoGame.Extended.Content.Pipeline/4.0.3": {
+        "dependencies": {
+          "Autofac": "5.2.0",
+          "MonoGame.Extended": "4.0.3"
+        },
+        "runtime": {
+          "lib/net8.0/MonoGame.Extended.Content.Pipeline.dll": {
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.0.3.0"
+          }
+        }
+      },
       "MonoGame.Framework.DesktopGL/3.8.2.1105": {
         "dependencies": {
           "MonoGame.Library.SDL": "2.26.5.5",
@@ -65,7 +95,7 @@
           "runtimes/win-x64/native/SDL2.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "2.26.5.0"
           }
         }
       },
@@ -91,12 +121,33 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Autofac/5.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V8dBH0dsv75uDzl7Sw+HkhKDPUw2eXnlMjcSVMH+tLo2s67MpTKGyDj1pDcpR+IF2u4YRs0s3/x7R88YJzIWvg==",
+      "path": "autofac/5.2.0",
+      "hashPath": "autofac.5.2.0.nupkg.sha512"
+    },
     "MonoGame.Content.Builder.Task/3.8.2.1105": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-wNlkLaITOqMs9MmCYLp3Qc7QfFng3FhIq/b+njdYV3cTVpLYgs/i56FYtJjm8jLoUA/2sJ36Qo/uqWpgW+jBuQ==",
       "path": "monogame.content.builder.task/3.8.2.1105",
       "hashPath": "monogame.content.builder.task.3.8.2.1105.nupkg.sha512"
+    },
+    "MonoGame.Extended/4.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-txxXEjMLwEGpAd0QYuYuDZ7HCZMpIha467tE0PDGAzuMzxkhtIgwDloFv61mgV8YJr40EYye6L3oeXdB4kV32g==",
+      "path": "monogame.extended/4.0.3",
+      "hashPath": "monogame.extended.4.0.3.nupkg.sha512"
+    },
+    "MonoGame.Extended.Content.Pipeline/4.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ztVpBNoUuGiE7EgF8MsBx0dPh0hFqY5Hf8Rf+77LC6H6VvtoTPBJljo8cz4xWU9qf1ZWm5Eqmgf/qsHVbIzmCw==",
+      "path": "monogame.extended.content.pipeline/4.0.3",
+      "hashPath": "monogame.extended.content.pipeline.4.0.3.nupkg.sha512"
     },
     "MonoGame.Framework.DesktopGL/3.8.2.1105": {
       "type": "package",

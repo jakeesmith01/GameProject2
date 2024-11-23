@@ -10,8 +10,14 @@
 
 #-------------------------------- References --------------------------------#
 
+/reference:MonoGame.Extended.Content.Pipeline.dll
 
 #---------------------------------- Content ---------------------------------#
+
+#begin aiCar.tsx
+/importer:TiledMapTilesetImporter
+/processor:TiledMapTilesetProcessor
+/build:aiCar.tsx
 
 #begin background.webp
 /importer:TextureImporter
@@ -68,6 +74,11 @@
 /processorParam:Quality=Best
 /build:carIdle.wav
 
+#begin DesertLevel2.0.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:DesertLevel2.0.tmx
+
 #begin details.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -80,6 +91,11 @@
 /processorParam:TextureFormat=Color
 /build:details.png
 
+#begin details.tsx
+/importer:TiledMapTilesetImporter
+/processor:TiledMapTilesetProcessor
+/build:details.tsx
+
 #begin finishline.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -91,6 +107,11 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:finishline.png
+
+#begin gas16x16.tsx
+/importer:TiledMapTilesetImporter
+/processor:TiledMapTilesetProcessor
+/build:gas16x16.tsx
 
 #begin gasstation.png
 /importer:TextureImporter
@@ -122,6 +143,18 @@
 /processorParam:Quality=Best
 /build:lose.wav
 
+#begin misc_props.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:misc_props.png
+
 #begin opponentcar.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -134,7 +167,12 @@
 /processorParam:TextureFormat=Color
 /build:opponentcar.png
 
-#begin playercar.png
+#begin playerCar.tsx
+/importer:TiledMapTilesetImporter
+/processor:TiledMapTilesetProcessor
+/build:playerCar.tsx
+
+#begin playercartexture.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -144,7 +182,12 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:playercar.png
+/build:playercartexture.png
+
+#begin props.tsx
+/importer:TiledMapTilesetImporter
+/processor:TiledMapTilesetProcessor
+/build:props.tsx
 
 #begin road.png
 /importer:TextureImporter
@@ -157,6 +200,16 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:road.png
+
+#begin road16x16.tsx
+/importer:TiledMapTilesetImporter
+/processor:TiledMapTilesetProcessor
+/build:road16x16.tsx
+
+#begin roadMark.tsx
+/importer:TiledMapTilesetImporter
+/processor:TiledMapTilesetProcessor
+/build:roadMark.tsx
 
 #begin win.wav
 /importer:WavImporter

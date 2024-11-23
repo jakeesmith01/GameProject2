@@ -6,6 +6,8 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using StateManagement;
 using Sprites;
+using Camera;
+using System.Collections.Generic;
 
 namespace Screens
 {
@@ -16,45 +18,34 @@ namespace Screens
         /// </summary>
         private ContentManager _content;
 
-        // The texture for the main road tile
-        private Texture2D _roadTexture;
-
         private SoundManager _soundManager = new SoundManager();
 
-        // The texture for the details
-        private Texture2D _detailTexture;
-
-        private Texture2D _finishTexture;
-
-        // Holds the indices of the randomized tiles so that it doesnt constantly generate new ones
-        private int[,] _tileIndices;
-
         private readonly Random rand = new Random();
+
+        private MapObjectManager _mapManager;
 
         /// <summary>
         /// The alpha to be added when paused
         /// </summary>
         private float _pauseAlpha;
 
-        // the width of the screen
-        private int _width = 576;
-        
-        // the height of the screen
-        private int _height = 952;
-
-        // The tile size of the roads
-        private int _tileSize = 64;
-
-        // The tile size of the details 
-        private int _detailTileSize = 16;
-
         // The player car
         private PlayerCar _player;
+
+        private const float SpeedBoostTime = 1.25f;
+
+        private float playerSpeedBoostTimer = 0.0f;
+
+        private float opponentSpeedBoostTimer = 0.0f;
 
         // The opponent car
         private OpponentCar _opponent;
 
-        private const float FinishLineDistance = 5000f;
+        private List<RoadBlock> roadBlocks;
+
+        private List<SpeedBoost> speedBoosts;
+
+        private CarCamera _camera;
 
         /// <summary>
         /// The input action for pausing the game
@@ -72,9 +63,6 @@ namespace Screens
             _pauseAction = new InputAction(
                 new[] { Buttons.Start, Buttons.Back },
                 new[] { Keys.Escape }, true);
-            
-            _player = new PlayerCar();
-            _opponent = new OpponentCar();
         }
 
         /// <summary>
@@ -85,21 +73,17 @@ namespace Screens
             if(_content == null)
                 _content = new ContentManager(ScreenManager.Game.Services, "Content");
 
-            _roadTexture = _content.Load<Texture2D>("road");
-            _detailTexture = _content.Load<Texture2D>("details");
-            _finishTexture = _content.Load<Texture2D>("finishline");
+            _camera = new CarCamera(ScreenManager.Game.GraphicsDevice);
 
-            int tilesPerRow = _width / _detailTileSize;
-            int tilesPerColumn = _height / _detailTileSize;
+            _mapManager = new MapObjectManager(ScreenManager);
+            _mapManager.LoadMap("DesertLevel2.0");
 
-            _tileIndices = new int[tilesPerRow, tilesPerColumn];
+            roadBlocks = _mapManager.RoadBlocks;
+            speedBoosts = _mapManager.SpeedBoosts;
+            _player = new PlayerCar(_mapManager.playerCarPosition);
+            _opponent = new OpponentCar(_mapManager.opponentCarPosition, _mapManager.Waypoints);
 
-            for(int i = 0; i < tilesPerRow; i++){
-                for(int j = 0; j < tilesPerColumn; j++){
-                    _tileIndices[i, j] = rand.Next(1, 4);
-                }
-            }
-
+            _camera.Follow(_player.Position);
             _player.LoadContent(_content);
             _opponent.LoadContent(_content);
 
@@ -139,19 +123,81 @@ namespace Screens
             }
 
             if(IsActive){
-                // Game logic goes here
-                _player.Update(gameTime);
-                _opponent.Update(gameTime);
 
-                if(_player.Position.Y < 32){
-                    ScreenManager.AddScreen(new WinScreen(), ControllingPlayer);
-                    _soundManager.PlayWinSound();
-                }
-
-                if(_opponent.Position.Y < 32){
+                if(_opponent.Position.Y <= 24)
+                {
                     ScreenManager.AddScreen(new LoseScreen(), ControllingPlayer);
-                    _soundManager.PlayLoseSound();
                 }
+                else if(_player.Position.Y <= 24)
+                {
+                    ScreenManager.AddScreen(new WinScreen(), ControllingPlayer);
+                }
+
+                // Game logic goes here
+                _camera.Follow(_player.Position);
+                _opponent.Update(gameTime, roadBlocks);
+
+                if(_player.SpeedBoostActive)
+                {
+                    playerSpeedBoostTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+                    if (playerSpeedBoostTimer >= SpeedBoostTime)
+                    {
+                        _player.SpeedBoostOff();
+                        playerSpeedBoostTimer = 0.0f;
+                    }
+                }
+
+                if (_opponent.SpeedBoostActive)
+                {
+                    opponentSpeedBoostTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+                    if (opponentSpeedBoostTimer >= SpeedBoostTime)
+                    {
+                        _opponent.SpeedBoostOff();
+                        opponentSpeedBoostTimer = 0.0f;
+                    }
+                }
+
+                // Add collision checking for the road blocks here
+                foreach (var roadBlock in roadBlocks)
+                {
+                    if (roadBlock.CheckCollision(_player.Hitbox))
+                    {
+                        Vector2 collisionDirection = _player.Position - roadBlock.Position;
+
+                        if(collisionDirection != Vector2.Zero)
+                        {
+                            collisionDirection.Normalize();
+                        }
+
+                        _player.HandleCollision(collisionDirection, 10f);
+
+                        break;
+                    }
+                }
+
+                foreach(var speedBoost in speedBoosts)
+                {
+                    if(speedBoost.CheckCollision(_player.Hitbox))
+                    {
+                        _player.SpeedBoost();
+                        playerSpeedBoostTimer = 0.0f;
+                        break;
+                    }
+                }
+
+                foreach(var speedBoost in speedBoosts)
+                {
+                    if(speedBoost.CheckCollision(_opponent.Hitbox))
+                    {
+                        _opponent.SpeedBoost();
+                        opponentSpeedBoostTimer = 0.0f;
+                        break;
+                    }
+                }
+
+                
             }
         }
 
@@ -187,39 +233,15 @@ namespace Screens
 
             var spriteBatch = ScreenManager.SpriteBatch;
 
-            int roadStartX = (_width / 2) - _tileSize;
+            spriteBatch.Begin(transformMatrix: _camera.GetViewMatrix());
 
-            spriteBatch.Begin();
+            _mapManager.Draw(_camera, spriteBatch);
 
-            // drawing the roads 
-            for(int y = 0; y < (_height / _tileSize) + 1; y++){ 
-                spriteBatch.Draw(_roadTexture, new Rectangle(roadStartX, y * _tileSize, _tileSize, _tileSize), Color.White);
-                spriteBatch.Draw(_roadTexture, new Rectangle(roadStartX + _tileSize, y * _tileSize, _tileSize, _tileSize), Color.White);
-
-            }
-
-            for(int y = 0; y < _height / _detailTileSize; y++){
-
-                for(int x = 0; x < (((_width / 2) - _tileSize) / _detailTileSize); x++){
-                    int detailIndex = _tileIndices[x, y];
-                    Rectangle detailSrc = new Rectangle(detailIndex * _detailTileSize, 0, _detailTileSize, _detailTileSize);
-                    spriteBatch.Draw(_detailTexture, new Rectangle(x * _detailTileSize, y * _detailTileSize, _detailTileSize, _detailTileSize), detailSrc, Color.White);
-                }
-
-                for(int x = ((_width / 2) + _tileSize) / _detailTileSize; x < (_width / _detailTileSize); x++){
-                    int detailIndex = _tileIndices[x, y];
-                    Rectangle detailSrc = new Rectangle(detailIndex * _detailTileSize, 0, _detailTileSize, _detailTileSize);
-                    spriteBatch.Draw(_detailTexture, new Rectangle(x * _detailTileSize, y * _detailTileSize, _detailTileSize, _detailTileSize), detailSrc, Color.White);
-                }
-            }
-
-            int finishLineY = 32;
-            spriteBatch.Draw(_finishTexture, new Rectangle(roadStartX + 8, finishLineY, (_tileSize * 2) - 16, _tileSize / 3), Color.White);
-
+            
             _opponent.Draw(spriteBatch);
             _player.Draw(spriteBatch);
-            spriteBatch.End();
 
+            spriteBatch.End();
         }
 
     }

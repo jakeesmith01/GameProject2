@@ -16,8 +16,8 @@ namespace gameprojecttwo{
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
 
-            _graphics.PreferredBackBufferWidth = 576;
-            _graphics.PreferredBackBufferHeight = 936;
+            _graphics.PreferredBackBufferWidth = 700;
+            _graphics.PreferredBackBufferHeight = 700;
 
             var screenFactory = new ScreenFactory();
             Services.AddService(typeof(IScreenFactory), screenFactory);

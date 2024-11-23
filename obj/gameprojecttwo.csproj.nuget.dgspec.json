@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/home/jake/ksu/projects/cis580/gameprojecttwo/gameprojecttwo.csproj": {}
+    "C:\\Users\\Jake\\source\\repos\\gp6\\gameprojecttwo.csproj": {}
   },
   "projects": {
-    "/home/jake/ksu/projects/cis580/gameprojecttwo/gameprojecttwo.csproj": {
+    "C:\\Users\\Jake\\source\\repos\\gp6\\gameprojecttwo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/jake/ksu/projects/cis580/gameprojecttwo/gameprojecttwo.csproj",
+        "projectUniqueName": "C:\\Users\\Jake\\source\\repos\\gp6\\gameprojecttwo.csproj",
         "projectName": "gameprojecttwo",
-        "projectPath": "/home/jake/ksu/projects/cis580/gameprojecttwo/gameprojecttwo.csproj",
-        "packagesPath": "/home/jake/.nuget/packages/",
-        "outputPath": "/home/jake/ksu/projects/cis580/gameprojecttwo/obj/",
+        "projectPath": "C:\\Users\\Jake\\source\\repos\\gp6\\gameprojecttwo.csproj",
+        "packagesPath": "C:\\Users\\Jake\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jake\\source\\repos\\gp6\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/jake/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Jake\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -41,6 +53,14 @@
             "MonoGame.Content.Builder.Task": {
               "target": "Package",
               "version": "[3.8.2.1105, )"
+            },
+            "MonoGame.Extended": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "MonoGame.Extended.Content.Pipeline": {
+              "target": "Package",
+              "version": "[4.0.3, )"
             },
             "MonoGame.Framework.DesktopGL": {
               "target": "Package",
@@ -58,18 +78,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.8, 8.0.8]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

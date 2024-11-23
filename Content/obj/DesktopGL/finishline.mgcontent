@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/finishline.png</SourceFile>
-  <SourceTime>2024-09-27T19:08:39.7630909-05:00</SourceTime>
-  <DestFile>/home/jake/ksu/projects/cis580/gameprojecttwo/Content/bin/DesktopGL/finishline.xnb</DestFile>
-  <DestTime>2024-09-27T19:09:57.3093952-05:00</DestTime>
+  <SourceFile>C:/Users/Jake/source/repos/gp6/Content/finishline.png</SourceFile>
+  <SourceTime>2024-11-22T12:36:42.1332079-06:00</SourceTime>
+  <DestFile>C:/Users/Jake/source/repos/gp6/Content/bin/DesktopGL/finishline.xnb</DestFile>
+  <DestTime>2024-11-22T13:47:59.3417507-06:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2024-08-16T12:05:56-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
