@@ -29,7 +29,7 @@ namespace Screens{
 
         public void PlayAgainMenuEntrySelected(object sender, PlayerIndexEventArgs e)
         {
-            LoadingScreen.Load(ScreenManager, true, e.PlayerIndex, new GameplayScreen());
+            LoadingScreen.Load(ScreenManager, true, e.PlayerIndex, new GameplayScreen(GameSettings.LevelID));
         }
 
         public void ReturnToMainMenuEntrySelected(object sender, PlayerIndexEventArgs e)

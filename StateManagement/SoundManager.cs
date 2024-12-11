@@ -20,6 +20,9 @@ namespace StateManagement
         // The sound effect for the car idling
         private SoundEffect _carIdleSound;
 
+        // The sound effect when the car hits a road block
+        private SoundEffect _hitSound;
+
         // The sound effect for the car driving
         private SoundEffect _carDrivingSound;
 
@@ -32,6 +35,8 @@ namespace StateManagement
         // The background music 
         private Song _backgroundMusic;
 
+
+
         /// <summary>
         /// Loads the content for the sound effects and background music
         /// </summary>
@@ -42,12 +47,13 @@ namespace StateManagement
             _winSound = content.Load<SoundEffect>("win");
             _loseSound = content.Load<SoundEffect>("lose");
             _backgroundMusic = content.Load<Song>("backgroundMusic");
+            _hitSound = content.Load<SoundEffect>("hit");
 
             _carIdle = _carIdleSound.CreateInstance();
             _carDrive = _carDrivingSound.CreateInstance();
 
             MediaPlayer.IsRepeating = true;
-            MediaPlayer.Volume = GameSettings.MusicVolume;
+            MediaPlayer.Volume = GameSettings.MusicVolume / 4;
             MediaPlayer.Play(_backgroundMusic);
 
             _carIdle.Volume = GameSettings.SFXVolume;
@@ -55,6 +61,14 @@ namespace StateManagement
 
             _carDrive.IsLooped = false;
             _carIdle.IsLooped = false;
+        }
+
+        /// <summary>
+        /// Plays the hit sound effect at the specified SFX volume
+        /// </summary>
+        public void PlayHitSound()
+        {
+            _hitSound.Play(GameSettings.SFXVolume, 0, 0);
         }
 
         /// <summary>

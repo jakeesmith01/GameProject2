@@ -24,6 +24,8 @@ namespace Screens
 
         private MapObjectManager _mapManager;
 
+        private string mapName;
+
         /// <summary>
         /// The alpha to be added when paused
         /// </summary>
@@ -32,7 +34,7 @@ namespace Screens
         // The player car
         private PlayerCar _player;
 
-        private const float SpeedBoostTime = 1.25f;
+        private const float SpeedBoostTime = 1.5f;
 
         private float playerSpeedBoostTimer = 0.0f;
 
@@ -55,7 +57,7 @@ namespace Screens
         /// <summary>
         /// The GameplayScreen Constructor
         /// </summary>
-        public GameplayScreen()
+        public GameplayScreen(int levelID)
         {
             TransitionOnTime = TimeSpan.FromSeconds(1.5);
             TransitionOffTime = TimeSpan.FromSeconds(0.5);
@@ -63,6 +65,8 @@ namespace Screens
             _pauseAction = new InputAction(
                 new[] { Buttons.Start, Buttons.Back },
                 new[] { Keys.Escape }, true);
+
+            mapName = (levelID == 1) ? "DesertLevel2.0" : "SummerLevel";
         }
 
         /// <summary>
@@ -76,7 +80,7 @@ namespace Screens
             _camera = new CarCamera(ScreenManager.Game.GraphicsDevice);
 
             _mapManager = new MapObjectManager(ScreenManager);
-            _mapManager.LoadMap("DesertLevel2.0");
+            _mapManager.LoadMap(mapName);
 
             roadBlocks = _mapManager.RoadBlocks;
             speedBoosts = _mapManager.SpeedBoosts;
@@ -126,6 +130,7 @@ namespace Screens
 
                 if(_opponent.Position.Y <= 24)
                 {
+                    _soundManager.PlayLoseSound();
                     ScreenManager.AddScreen(new LoseScreen(), ControllingPlayer);
                 }
                 else if(_player.Position.Y <= 24)
@@ -171,7 +176,24 @@ namespace Screens
                             collisionDirection.Normalize();
                         }
 
-                        _player.HandleCollision(collisionDirection, 10f);
+                        _player.HandleCollision(roadBlock.Hitbox);
+
+                        break;
+                    }
+                }
+
+                foreach(var roadBlock in roadBlocks)
+                {
+                    if (roadBlock.CheckCollision(_opponent.Hitbox))
+                    {
+                        Vector2 collisionDirection = _opponent.Position - roadBlock.Position;
+
+                        if(collisionDirection != Vector2.Zero)
+                        {
+                            collisionDirection.Normalize();
+                        }
+
+                        _opponent.HandleCollision(roadBlock.Hitbox);
 
                         break;
                     }

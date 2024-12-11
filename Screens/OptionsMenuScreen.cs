@@ -13,28 +13,43 @@ namespace Screens
         // The menuentry for sound effects audio options
         private readonly MenuEntry _sfxAudioMenuEntry;
 
+        private readonly MenuEntry _levelSelectMenuEntry;
+
         // The current audio volume
         private static float CurrentMusicVolume = GameSettings.MusicVolume;
 
         // The current sfx volume
         private static float CurrentSFXVolume = GameSettings.SFXVolume;
 
+        private static int CurrentLevelID = GameSettings.LevelID;
+
         public OptionsMenuScreen() : base("Options")
         {
             _audioMenuEntry = new MenuEntry(string.Empty);
             _sfxAudioMenuEntry = new MenuEntry(string.Empty);
+            _levelSelectMenuEntry = new MenuEntry(string.Empty);
+
 
             SetMenuEntryText();
 
             var back = new MenuEntry("Back");
 
+            _levelSelectMenuEntry.Selected += _levelSelectMenuEntry_Selected;
             _audioMenuEntry.Selected += AudioMenuEntrySelected;
             _sfxAudioMenuEntry.Selected += SFXAudioMenuEntrySelected;
             back.Selected += OnCancel;
 
+            MenuEntries.Add(_levelSelectMenuEntry);
             MenuEntries.Add(_audioMenuEntry);
             MenuEntries.Add(_sfxAudioMenuEntry);
             MenuEntries.Add(back);
+        }
+
+        private void _levelSelectMenuEntry_Selected(object sender, PlayerIndexEventArgs e)
+        {
+            CurrentLevelID = (CurrentLevelID == 1) ? 2 : 1;
+            GameSettings.LevelID = CurrentLevelID;
+            SetMenuEntryText();
         }
 
         // Fills in the latest values for the options screen menu text.
@@ -42,6 +57,7 @@ namespace Screens
         {
             _audioMenuEntry.Text = $"Music Volume: {CurrentMusicVolume.ToString("P0")}";
             _sfxAudioMenuEntry.Text = $"SFX Volume: {CurrentSFXVolume.ToString("P0")}";
+            _levelSelectMenuEntry.Text = $"Level: {GameSettings.LevelID}";
         }
 
         /// <summary>

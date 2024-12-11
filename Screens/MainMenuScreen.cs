@@ -8,11 +8,11 @@ namespace Screens
     {
         public MainMenuScreen() : base("Pixel Racer")
         {
-            var playGameMenuEntry = new MenuEntry("Play Game");
+            var playGameMenuEntry = new MenuEntry("Play");
             var optionsMenuEntry = new MenuEntry("Options");
             var exitMenuEntry = new MenuEntry("Exit");
-            var MovingMenuEntry = new MenuEntry("WASD to move!");
-            var instructMenuEntry = new MenuEntry("Beat your opponent to the finish line!");
+            var MovingMenuEntry = new MenuEntry("WASD to move");
+            var instructMenuEntry = new MenuEntry("Spacebar for E-Brake");
 
             playGameMenuEntry.Selected += PlayGameMenuEntrySelected;
             optionsMenuEntry.Selected += OptionsMenuEntrySelected;
@@ -27,7 +27,7 @@ namespace Screens
 
         private void PlayGameMenuEntrySelected(object sender, PlayerIndexEventArgs e)
         {
-            LoadingScreen.Load(ScreenManager, true, e.PlayerIndex, new GameplayScreen());
+            LoadingScreen.Load(ScreenManager, true, e.PlayerIndex, new GameplayScreen(GameSettings.LevelID));
         }
 
         private void OptionsMenuEntrySelected(object sender, PlayerIndexEventArgs e)

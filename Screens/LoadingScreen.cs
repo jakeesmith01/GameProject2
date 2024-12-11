@@ -89,19 +89,23 @@ namespace Screens
                 var spriteBatch = ScreenManager.SpriteBatch;
                 var font = ScreenManager.Font;
 
-                const string message = "Loading...";
+                const string message = "Your opponent is faster";
+                const string message2 = "Avoid the obstacles to get ahead!";
 
                 // Center the text in the viewport.
                 var viewport = ScreenManager.GraphicsDevice.Viewport;
                 var viewportSize = new Vector2(viewport.Width, viewport.Height);
                 var textSize = font.MeasureString(message);
+                var textSize2 = font.MeasureString(message2);
                 var textPosition = (viewportSize - textSize) / 2;
+                var textPosition2 = (viewportSize - textSize2) / 2;
 
                 var color = Color.White * TransitionAlpha;
 
                 // Draw the text.
                 spriteBatch.Begin();
                 spriteBatch.DrawString(font, message, textPosition, color);
+                spriteBatch.DrawString(font, message2, new Vector2(textPosition2.X, textPosition2.Y + 35), color);
                 spriteBatch.End();
             }
         }

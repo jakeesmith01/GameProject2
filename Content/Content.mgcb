@@ -74,6 +74,18 @@
 /processorParam:Quality=Best
 /build:carIdle.wav
 
+#begin debugTexture.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:debugTexture.png
+
 #begin DesertLevel2.0.tmx
 /importer:TiledMapImporter
 /processor:TiledMapProcessor
@@ -137,6 +149,12 @@
 /processorParam:TextureFormat=Color
 /build:gradient.png
 
+#begin hit.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:hit.wav
+
 #begin lose.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
@@ -166,6 +184,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:opponentcar.png
+
+#begin pixelracer.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:pixelracer.png
 
 #begin playerCar.tsx
 /importer:TiledMapTilesetImporter
@@ -210,6 +240,11 @@
 /importer:TiledMapTilesetImporter
 /processor:TiledMapTilesetProcessor
 /build:roadMark.tsx
+
+#begin SummerLevel.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:SummerLevel.tmx
 
 #begin win.wav
 /importer:WavImporter

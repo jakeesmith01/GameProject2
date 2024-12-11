@@ -7,5 +7,7 @@ namespace StateManagement{
         public static float SFXVolume { get; set; } = 1.0f;
 
         public static float MusicVolume { get; set; } = 1.0f;
+
+        public static int LevelID { get; set; } = 1;
     }
 }

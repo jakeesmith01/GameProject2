@@ -12,6 +12,7 @@
     <File>C:/Users/Jake/source/repos/gp6/Content/carDrive.ogg</File>
     <File>C:/Users/Jake/source/repos/gp6/Content/carDrive2.wav</File>
     <File>C:/Users/Jake/source/repos/gp6/Content/carIdle.wav</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/debugTexture.png</File>
     <File>C:/Users/Jake/source/repos/gp6/Content/DesertLevel2.0.tmx</File>
     <File>C:/Users/Jake/source/repos/gp6/Content/details.png</File>
     <File>C:/Users/Jake/source/repos/gp6/Content/details.tsx</File>
@@ -19,18 +20,25 @@
     <File>C:/Users/Jake/source/repos/gp6/Content/gas16x16.tsx</File>
     <File>C:/Users/Jake/source/repos/gp6/Content/gasstation.png</File>
     <File>C:/Users/Jake/source/repos/gp6/Content/gradient.png</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/hit.wav</File>
     <File>C:/Users/Jake/source/repos/gp6/Content/lose.wav</File>
     <File>C:/Users/Jake/source/repos/gp6/Content/misc_props.png</File>
     <File>C:/Users/Jake/source/repos/gp6/Content/opponentcar.png</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/pixelracer.png</File>
     <File>C:/Users/Jake/source/repos/gp6/Content/playerCar.tsx</File>
     <File>C:/Users/Jake/source/repos/gp6/Content/playercartexture.png</File>
     <File>C:/Users/Jake/source/repos/gp6/Content/props.tsx</File>
     <File>C:/Users/Jake/source/repos/gp6/Content/road.png</File>
     <File>C:/Users/Jake/source/repos/gp6/Content/road16x16.tsx</File>
     <File>C:/Users/Jake/source/repos/gp6/Content/roadMark.tsx</File>
+    <File>C:/Users/Jake/source/repos/gp6/Content/SummerLevel.tmx</File>
     <File>C:/Users/Jake/source/repos/gp6/Content/win.wav</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

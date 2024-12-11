@@ -34,7 +34,7 @@ namespace Screens{
             if (_content == null)
                 _content = new ContentManager(ScreenManager.Game.Services, "Content");
 
-            _background = _content.Load<Texture2D>("background");
+            _background = _content.Load<Texture2D>("pixelracer");
         }
 
         /// <summary>
