@@ -9,8 +9,8 @@ Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Siz
 "C:/Users/Jake/source/repos/gp6/Content/carIdle.wav","C:/Users/Jake/source/repos/gp6/Content/bin/DesktopGL/Content/carIdle.xnb","SoundEffectProcessor","SoundEffectContent",14994730,14994105,0.1841905
 "C:/Users/Jake/source/repos/gp6/Content/debugTexture.png","C:/Users/Jake/source/repos/gp6/Content/bin/DesktopGL/Content/debugTexture.xnb","TextureProcessor","Texture2DContent",83,89,0.0658516
 "C:/Users/Jake/source/repos/gp6/Content/DesertLevel2.0.tmx","C:/Users/Jake/source/repos/gp6/Content/bin/DesktopGL/Content/DesertLevel2.0.xnb","TiledMapProcessor","TiledMapContentItem",21725,20160,0.0976938
-"C:/Users/Jake/source/repos/gp6/Content/details.png","C:/Users/Jake/source/repos/gp6/Content/bin/DesktopGL/Content/details.xnb","TextureProcessor","Texture2DContent",516,4181,0.0638156
-"C:/Users/Jake/source/repos/gp6/Content/details.tsx","C:/Users/Jake/source/repos/gp6/Content/bin/DesktopGL/Content/details.xnb","TiledMapTilesetProcessor","TiledMapTilesetContentItem",269,222,0.0213619
+"C:/Users/Jake/source/repos/gp6/Content/details.png","C:/Users/Jake/source/repos/gp6/Content/bin/DesktopGL/Content/details.xnb","TextureProcessor","Texture2DContent",516,4181,0.0719242
+"C:/Users/Jake/source/repos/gp6/Content/details.tsx","C:/Users/Jake/source/repos/gp6/Content/bin/DesktopGL/Content/details.xnb","TiledMapTilesetProcessor","TiledMapTilesetContentItem",269,222,0.022032
 "C:/Users/Jake/source/repos/gp6/Content/detailsTwo.tsx","C:/Users/Jake/source/repos/gp6/Content/bin/DesktopGL/Content/detailsTwo_0.xnb","TiledMapTilesetProcessor","TiledMapTilesetContentItem",272,222,0.0034929
 "C:/Users/Jake/source/repos/gp6/Content/finishline.png","C:/Users/Jake/source/repos/gp6/Content/bin/DesktopGL/Content/finishline.xnb","TextureProcessor","Texture2DContent",122,1109,0.00133
 "C:/Users/Jake/source/repos/gp6/Content/gasstation.png","C:/Users/Jake/source/repos/gp6/Content/bin/DesktopGL/Content/gasstation.xnb","TextureProcessor","Texture2DContent",2762,155733,0.0063462

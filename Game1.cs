@@ -16,6 +16,7 @@ namespace gameprojecttwo{
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
 
+            Window.Title = "Pixel Racer";
             _graphics.PreferredBackBufferWidth = 700;
             _graphics.PreferredBackBufferHeight = 700;
 
